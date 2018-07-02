@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
+- path: Assets/Scenes/SN_Testing.unity
+=======
 - path: Assets/Scenes/SW-UIScene.unity
+>>>>>>> d255b3a8883f6b53a4ec382407e103413b1f8579
   isLoaded: 1
   isActive: 1
