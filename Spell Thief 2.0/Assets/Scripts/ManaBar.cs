@@ -12,7 +12,7 @@ public class ManaBar : MonoBehaviour {
     public float Cost; // cost per shot
     public float[] segments; // array of segments from high to low
 
-    private float Mana = 0;
+    public float Mana = 0;
 
     private void Start()
     {

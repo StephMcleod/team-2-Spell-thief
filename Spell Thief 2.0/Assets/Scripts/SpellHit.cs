@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletForce : MonoBehaviour {
+public class SpellHit : MonoBehaviour {
 
     public float Magnitude;
     public float Lifetime;
@@ -10,13 +10,19 @@ public class BulletForce : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        Rigidbody RB = GetComponent<Rigidbody>();  //specify bullets rigid body
-        RB.AddForce(transform.forward * Magnitude); // add force to rigid body in forwards directio
+        Rigidbody2D RB = GetComponent<Rigidbody2D>();  //specify bullets rigid body
+        RB.AddForce(transform.right * Magnitude); // add force to rigid body in forwards direction
         Destroy(gameObject ,Lifetime); // after the lifetime expires destroy bullety
 	}
 
-    private void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         Destroy(gameObject); //destruct on colliding
+        Debug.Log("Hit");
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        gameObject.layer = 1;
     }
 }
+    

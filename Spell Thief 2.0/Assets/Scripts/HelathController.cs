@@ -16,9 +16,10 @@ public class HelathController : MonoBehaviour {
         DrawHealth();// run draw health function
     }
 
-    private void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        Health -= collision.gameObject.GetComponent<BulletForce>().Damage;  //subtract damage value
+        if(collision.transform.tag == "DeactiveProjectile")
+        Health -= collision.gameObject.GetComponent<SpellHit>().Damage;  //subtract damage value
         if (Health <= 0) Destroy(gameObject); // if health is 0 or lower destroy
         DrawHealth();  // run draw health function
     }
