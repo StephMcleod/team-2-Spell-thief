@@ -1,5 +1,0 @@
-change axis of 2d movement from zx to xy
-segement mana bar
-change axis of mouse tracking
-modify bullet force to work with 2d rigid body rename to more menaing full
-possible rewrite 2d move to work on force not translate
