@@ -28,10 +28,7 @@ public class ManaBar : MonoBehaviour {
         {
             Mana += RegenRate* Time.deltaTime; //add energy per second
         }
-        if (Input.GetButtonDown("Fire1")) // when the player uses ability
-        {
-           Mana -= Cost; // subtract cost
-        }
+
         if(Mana > NewMax) Mana = NewMax;
 
         ManaPercent = Mana / Max; // get energy as percent

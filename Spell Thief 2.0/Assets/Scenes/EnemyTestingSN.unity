@@ -513,6 +513,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Bullet: {fileID: 1285595860890214, guid: 09d8f2f35d951ee4792a8f5587b858e2, type: 2}
+  player: {fileID: 2077075599}
 --- !u!1 &1390304847
 GameObject:
   m_ObjectHideFlags: 0
@@ -645,8 +646,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -616, y: -417}
-  m_SizeDelta: {x: 512, y: 64}
+  m_AnchoredPosition: {x: -650, y: -425}
+  m_SizeDelta: {x: 256, y: 64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1923027129
 MonoBehaviour:
@@ -791,7 +792,7 @@ GameObject:
   - component: {fileID: 2077075605}
   - component: {fileID: 2077075606}
   m_Layer: 2
-  m_Name: Charecter
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -985,7 +986,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -616, y: -315}
+  m_AnchoredPosition: {x: -650, y: -340}
   m_SizeDelta: {x: 256, y: 64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2093712070
