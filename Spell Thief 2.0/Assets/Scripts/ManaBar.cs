@@ -12,7 +12,7 @@ public class ManaBar : MonoBehaviour {
     public float Cost; // cost per shot
     public float[] segments; // array of segments from high to low
 
-    private float Mana = 0;
+    public float Mana = 0;
 
     private void Start()
     {
@@ -28,10 +28,7 @@ public class ManaBar : MonoBehaviour {
         {
             Mana += RegenRate* Time.deltaTime; //add energy per second
         }
-        if (Input.GetButtonDown("Fire1")) // when the player uses ability
-        {
-           Mana -= Cost; // subtract cost
-        }
+
         if(Mana > NewMax) Mana = NewMax;
 
         ManaPercent = Mana / Max; // get energy as percent

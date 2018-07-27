@@ -22,7 +22,7 @@ public class Movement2D : MonoBehaviour {
 
         if (Physics2D.Raycast(transform.position, new Vector3(0,-1,0),GetComponent<Renderer>().bounds.size.y / 2 + 0.1f)) //check grounding
         {
-            Debug.Log("jump1");
+            //Debug.Log("jump1");
             if (Input.GetButtonDown("Jump"))
             {
                 RB.AddForce(new Vector2(0,transform.up.y * jumpheight));
