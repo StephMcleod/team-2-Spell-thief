@@ -1,2 +1,2 @@
-
-modify bullet force to work with 2d rigid body rename to more menaing full
+output hit in 2d raycast
+adapt chanell beam
