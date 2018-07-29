@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 114513267711135758}
   m_Layer: 8
   m_Name: BasicSpell
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Magnitude: 100
-  Lifetime: 5
+  Lifetime: 3
   Damage: 100
 --- !u!212 &212071084568645342
 SpriteRenderer:

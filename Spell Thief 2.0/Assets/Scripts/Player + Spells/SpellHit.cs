@@ -18,7 +18,6 @@ public class SpellHit : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D collision)
     {
         Destroy(gameObject); //destruct on colliding
-        Debug.Log("Hit");
     }
     private void OnTriggerExit2D(Collider2D collision)
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HelathController : MonoBehaviour {
+public class HealthController : MonoBehaviour {
 
     public float Health;
     public float MaxHealth;
@@ -18,7 +18,7 @@ public class HelathController : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.transform.tag == "DeactiveProjectile")
+        if(collision.transform.tag == "Projectile")
         Health -= collision.gameObject.GetComponent<SpellHit>().Damage;  //subtract damage value
         if (Health <= 0) Destroy(gameObject); // if health is 0 or lower destroy
         DrawHealth();  // run draw health function
