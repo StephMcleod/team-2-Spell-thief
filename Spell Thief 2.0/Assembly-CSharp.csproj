@@ -51,16 +51,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\CastSpell.cs" />
-     <Compile Include="Assets\Scripts\ChanellBeam.cs" />
-     <Compile Include="Assets\Scripts\EnemySpellCast.cs" />
-     <Compile Include="Assets\Scripts\FollowMouse.cs" />
-     <Compile Include="Assets\Scripts\HealthController.cs" />
-     <Compile Include="Assets\Scripts\ManaBar.cs" />
-     <Compile Include="Assets\Scripts\ManaPotion.cs" />
-     <Compile Include="Assets\Scripts\Movement2D.cs" />
-     <Compile Include="Assets\Scripts\PickupSpell.cs" />
-     <Compile Include="Assets\Scripts\SpellHit.cs" />
+     <Compile Include="Assets\Scripts\MeeleMovement.cs" />
+     <Compile Include="Assets\Scripts\Player + Spells\CastSpell.cs" />
+     <Compile Include="Assets\Scripts\Player + Spells\ChanellBeam.cs" />
+     <Compile Include="Assets\Scripts\Player + Spells\EnemySpellCast.cs" />
+     <Compile Include="Assets\Scripts\Player + Spells\FollowMouse.cs" />
+     <Compile Include="Assets\Scripts\Player + Spells\HealthController.cs" />
+     <Compile Include="Assets\Scripts\Player + Spells\ManaBar.cs" />
+     <Compile Include="Assets\Scripts\Player + Spells\ManaPotion.cs" />
+     <Compile Include="Assets\Scripts\Player + Spells\Movement2D.cs" />
+     <Compile Include="Assets\Scripts\Player + Spells\PickupSpell.cs" />
+     <Compile Include="Assets\Scripts\Player + Spells\SpellHit.cs" />
      <None Include="Assets\Scripts\To do.txt" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>C:/Users/Steven/Documents/GitHub/team-2-Spell-thief/Spell Thief 2.0/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
