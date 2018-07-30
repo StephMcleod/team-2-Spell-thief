@@ -9,8 +9,9 @@ public class EnemySpellCast : MonoBehaviour
     public float Delay; // minmum time between shots
     float LastShot = 0.0f; // when was the last shot
     public float Range = 10;
-    public AudioClip sound;
+    public AudioClip sound; // sound not specified yet
     private AudioSource SoundPlayer;
+    public LayerMask LayerFilter;
     GameObject Target;
 
     void Start()
@@ -26,7 +27,7 @@ public class EnemySpellCast : MonoBehaviour
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg; // geta ngle to face the object using trig
         transform.rotation = Quaternion.AngleAxis(angle,Vector3.forward);// rotates specified number of degrees around upwards vector
 
-        if (Physics2D.Raycast(transform.position,Vector2.left,Range) /*&& hit.transform.tag == "Player"*/) // if the enemy finds an object with specified distance
+        if (Physics2D.Raycast(transform.position,Vector2.left,Range,LayerFilter)) // if the enemy finds an object with specified distance
         {
             if (Time.time >= LastShot + Delay) // delay has ended
             {

@@ -5,13 +5,18 @@ using UnityEngine;
 public class MeeleMovement : MonoBehaviour {
 
     enum Directions {Left, Right}
-    Directions Current;
+        Directions Current;
     public float Speed;
+    float Range;
+    public LayerMask Filter;
+    public LayerMask PlayerFilter;
+    public float MeleeRange;
     [HideInInspector]public Rigidbody2D RB;
 
     // Use this for initialization
     void Start () {
         RB = GetComponent<Rigidbody2D>();
+        Range = GetComponent<Renderer>().bounds.size.y;
     }
 
     // Update is called once per frame
@@ -20,7 +25,7 @@ public class MeeleMovement : MonoBehaviour {
         RB.velocity = new Vector2(0, RB.velocity.y);
         if (Current == Directions.Right) // is the enemy traveling left or right
         {
-            if (Physics2D.Raycast(transform.position + (transform.right * -1), transform.up * -1, GetComponent<Renderer>().bounds.size.y / 2 + 0.1f)) // ensure the enemy doesnt walk of edges
+            if (Physics2D.Raycast(transform.position + (transform.right * -.5f), transform.up * -1, GetComponent<Renderer>().bounds.size.y / 2 + 0.1f, Filter)) // ensure the enemy doesnt walk of edges
             {
                 RB.AddForce(transform.right * Speed);
             }
@@ -32,7 +37,7 @@ public class MeeleMovement : MonoBehaviour {
         }
         else
         {
-            if (Physics2D.Raycast(transform.position + (transform.right), transform.up * -1, GetComponent<Renderer>().bounds.size.y / 2 + 0.1f))
+            if (Physics2D.Raycast(transform.position + (transform.right * .5f), transform.up * -1, GetComponent<Renderer>().bounds.size.y / 2 + 0.1f, Filter))
             {
                 RB.AddForce(transform.right * Speed);
             }
@@ -41,6 +46,10 @@ public class MeeleMovement : MonoBehaviour {
                 Current = Directions.Right;
                 Speed = Speed * -1;
             }
+        }
+        if (Physics2D.Raycast(transform.position , transform.right * Speed, GetComponent<Renderer>().bounds.size.y / 2 + MeleeRange, PlayerFilter))
+        {
+            Debug.Log("ouch");
         }
     }
 }

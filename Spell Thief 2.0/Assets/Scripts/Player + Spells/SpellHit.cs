@@ -19,9 +19,5 @@ public class SpellHit : MonoBehaviour {
     {
         Destroy(gameObject); //destruct on colliding
     }
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        gameObject.layer = 1;
-    }
 }
     

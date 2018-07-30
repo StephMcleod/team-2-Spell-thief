@@ -20,7 +20,7 @@ public class HealthController : MonoBehaviour {
     {
         if(collision.transform.tag == "Projectile")
         Health -= collision.gameObject.GetComponent<SpellHit>().Damage;  //subtract damage value
-        if (Health <= 0) Destroy(gameObject); // if health is 0 or lower destroy
+        
         DrawHealth();  // run draw health function
     }
 
@@ -31,5 +31,6 @@ public class HealthController : MonoBehaviour {
             HealthPercent = Health/MaxHealth; // get health as percent
             HealthBar.fillAmount = HealthPercent;
         }
+        if (Health <= 0) Destroy(gameObject); // if health is 0 or lower destroy
     }
 }
