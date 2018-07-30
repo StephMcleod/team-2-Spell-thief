@@ -47,9 +47,5 @@ public class MeeleMovement : MonoBehaviour {
                 Speed = Speed * -1;
             }
         }
-        if (Physics2D.Raycast(transform.position , transform.right * Speed, GetComponent<Renderer>().bounds.size.y / 2 + MeleeRange, PlayerFilter))
-        {
-            Debug.Log("ouch");
-        }
     }
 }

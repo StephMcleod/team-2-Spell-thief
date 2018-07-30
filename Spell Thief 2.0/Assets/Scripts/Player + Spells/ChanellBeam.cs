@@ -9,10 +9,12 @@ public class ChanellBeam : MonoBehaviour {
     private RaycastHit2D Hit;
     public LayerMask Layers;
     public float Damage;
+    public float cost;
 
     // Use this for initialization
     void Start () {
         lineDraw = GetComponent<LineRenderer>(); // line render component
+        Player = GameObject.Find("PlayerCaster").transform;
     }
 	
 	// Update is called once per frame
@@ -33,6 +35,14 @@ public class ChanellBeam : MonoBehaviour {
         if (Hit.transform != null)
         {
             lineDraw.SetPosition(1, Hit.point); // stop line if something is hit
+        }
+        if (Input.GetButtonUp("Fire1"))
+        {
+            Destroy(gameObject);
+        }
+        else if (GameObject.Find("Player").GetComponent<ManaBar>().Mana >= cost)
+        {
+            GameObject.Find("Player").GetComponent<ManaBar>().Mana -= cost;
         }
     }
 }
