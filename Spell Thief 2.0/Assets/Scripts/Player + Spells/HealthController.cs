@@ -16,12 +16,15 @@ public class HealthController : MonoBehaviour {
         DrawHealth();// run draw health function
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.transform.tag == "Projectile")
-        Health -= collision.gameObject.GetComponent<SpellHit>().Damage;  //subtract damage value
-        
-        DrawHealth();  // run draw health function
+        Debug.Log("Hit");
+        if (collision.transform.tag == "Projectile")
+        {
+            Health -= collision.gameObject.GetComponent<SpellHit>().Damage;  //subtract damage value
+            DrawHealth();  // run draw health function
+            Destroy(collision.gameObject);
+        }
     }
 
     public void DrawHealth()

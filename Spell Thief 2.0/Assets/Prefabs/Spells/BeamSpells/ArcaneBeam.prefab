@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 114406428095220400}
   - component: {fileID: 120942364838529298}
   m_Layer: 0
-  m_Name: ChanellBeam
+  m_Name: ArcaneBeam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

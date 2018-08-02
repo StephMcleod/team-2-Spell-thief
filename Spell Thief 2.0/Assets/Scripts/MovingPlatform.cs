@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MeeleMovement : MonoBehaviour {
+public class MovingPlatform : MonoBehaviour {
 
     enum Directions {Left, Right}
         Directions Current;

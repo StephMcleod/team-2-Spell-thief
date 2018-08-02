@@ -17,17 +17,13 @@ public class SpellHit : MonoBehaviour {
         Destroy(gameObject ,Lifetime); // after the lifetime expires destroy bullety
 	}
 
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        int xMultiply = Random.Range(-1, 2);
-        int yMultiply = Random.Range(-1, 2);
-        Bounces -= 1;
-        RB.velocity = new Vector2(RB.velocity.x * xMultiply, RB.velocity.y * yMultiply);
+    void OnCollisionEnter2D(Collision2D collision)
+    {   
+        Bounces -= 1; 
         if (Bounces <= 0)
         {
             Destroy(gameObject); //destruct on colliding
         }
-        // collision.point relatice to transform
     }
 }
     

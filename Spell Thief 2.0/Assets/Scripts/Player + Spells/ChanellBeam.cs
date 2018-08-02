@@ -28,6 +28,11 @@ public class ChanellBeam : MonoBehaviour {
                 Hit.transform.gameObject.GetComponent<HealthController>().Health -= Damage; // sybtract 1 health each frame
                 Hit.transform.gameObject.GetComponent<HealthController>().Invoke("DrawHealth", 0); // redraw health
             }
+            if (GetComponent<CreateFlame>() != null)
+            {
+                GetComponent<CreateFlame>().Hitpoint = Hit.point;
+                GetComponent<CreateFlame>().Invoke("CreateFire", 0);
+            }
         }
         lineDraw.SetPosition(0, Player.position); // set line start at player
         lineDraw.SetPosition(1, Player.right * 100); //draw line 100 units
