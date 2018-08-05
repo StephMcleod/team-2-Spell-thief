@@ -67,6 +67,8 @@
      <Compile Include="Assets\Scripts\Spell Effects\Burn.cs" />
      <Compile Include="Assets\Scripts\Spell Effects\CreateFlame.cs" />
      <Compile Include="Assets\Scripts\Spell Effects\Flame.cs" />
+     <Compile Include="Assets\Scripts\Spell Effects\Freeze.cs" />
+     <Compile Include="Assets\Scripts\Spell Effects\LightningBeam.cs" />
      <None Include="Assets\Scripts\To do.txt" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>C:/Users/Steven/Documents/GitHub/team-2-Spell-thief/Spell Thief 2.0/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>

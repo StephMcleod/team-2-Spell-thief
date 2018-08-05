@@ -57,7 +57,7 @@ MonoBehaviour:
   Layers:
     serializedVersion: 2
     m_Bits: 2049
-  Damage: 10
+  Damage: 25
   cost: 10
 --- !u!120 &120942364838529298
 LineRenderer:
