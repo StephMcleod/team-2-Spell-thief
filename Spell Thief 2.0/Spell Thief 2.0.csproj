@@ -300,7 +300,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\MeeleMovement.cs" />
+    <Compile Include="Assets\Scripts\CamSwapper.cs" />
+    <Compile Include="Assets\Scripts\MeeleAttack.cs" />
+    <Compile Include="Assets\Scripts\MovingPlatform.cs" />
     <Compile Include="Assets\Scripts\Player + Spells\CastSpell.cs" />
     <Compile Include="Assets\Scripts\Player + Spells\ChanellBeam.cs" />
     <Compile Include="Assets\Scripts\Player + Spells\EnemySpellCast.cs" />
@@ -311,6 +313,11 @@
     <Compile Include="Assets\Scripts\Player + Spells\Movement2D.cs" />
     <Compile Include="Assets\Scripts\Player + Spells\PickupSpell.cs" />
     <Compile Include="Assets\Scripts\Player + Spells\SpellHit.cs" />
+    <Compile Include="Assets\Scripts\Spell Effects\Burn.cs" />
+    <Compile Include="Assets\Scripts\Spell Effects\CreateFlame.cs" />
+    <Compile Include="Assets\Scripts\Spell Effects\Flame.cs" />
+    <Compile Include="Assets\Scripts\Spell Effects\Freeze.cs" />
+    <Compile Include="Assets\Scripts\Spell Effects\LightningBeam.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Scripts\To do.txt" />
