@@ -16,10 +16,11 @@ public class Freeze : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        if ( Life <= 0) // when the enemy thaws out
+        if (Life <= 0) // when the enemy thaws out
         {
             Destroy(this);
         }
+        else Life -= Time.deltaTime;
 	}
 
     void OnDestroy()
