@@ -23,8 +23,9 @@ GameObject:
   - component: {fileID: 50930434909847132}
   - component: {fileID: 61619410410597132}
   - component: {fileID: 114513267711135758}
+  - component: {fileID: 114548497698465838}
   m_Layer: 8
-  m_Name: FallingSpell
+  m_Name: FireSpell
   m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -135,6 +136,33 @@ MonoBehaviour:
   Damage: 100
   Bounces: 0
   RB: {fileID: 0}
+--- !u!114 &114548497698465838
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1285595860890214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c82cbc9bc0e2ba24d806f40eb5d7ac69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Range: 2
+  Damage: 1000
+  filter:
+    useTriggers: 0
+    useLayerMask: 0
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 1
+    minDepth: -100
+    maxDepth: 100
+    minNormalAngle: 0
+    maxNormalAngle: 360
 --- !u!198 &198614572020949642
 ParticleSystem:
   m_ObjectHideFlags: 1

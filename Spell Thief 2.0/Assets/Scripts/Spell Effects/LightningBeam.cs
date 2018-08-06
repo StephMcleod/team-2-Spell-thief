@@ -42,11 +42,13 @@ public class LightningBeam : MonoBehaviour {
         {
             lineDraw.SetPosition(1, Hit.point); // stop line if something is hit
             RaycastHit2D ArcTarget = Physics2D.CircleCast(Hit.point, ArcRange, transform.forward, ArcRange, Layers);
-            if (Physics2D.CircleCast(Hit.point,ArcRange,transform.forward, ArcRange,Layers))
+            if (Physics2D.CircleCast(Hit.point, ArcRange, transform.forward, ArcRange, Layers))
             {
                 lineDraw.SetPosition(2, ArcTarget.transform.position);
             }
         }
+        else lineDraw.SetPosition(2, lineDraw.GetPosition(1));
+
         if (Input.GetButtonUp("Fire1"))
         {
             Destroy(gameObject);
