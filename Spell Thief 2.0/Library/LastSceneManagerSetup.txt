@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
+- path: Assets/Scenes/TutorialGreybox.unity
+=======
 - path: Assets/Scenes/EnemyTestingSN.unity
+>>>>>>> f55296073af30d7e5291691704be99311c0934ab
   isLoaded: 1
   isActive: 1
