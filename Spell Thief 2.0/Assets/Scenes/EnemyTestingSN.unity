@@ -379,7 +379,7 @@ Prefab:
         type: 2}
       propertyPath: Spell
       value: 
-      objectReference: {fileID: 1285595860890214, guid: afc36df702a5cac42910ffc8ec16952e,
+      objectReference: {fileID: 1285595860890214, guid: 7c653d9b285218447843ccb2abcd1607,
         type: 2}
     - target: {fileID: 50894090337709668, guid: d9bff96771a720e4d98ac3fdfcc4a45f,
         type: 2}
