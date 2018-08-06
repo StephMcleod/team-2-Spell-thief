@@ -1,2 +1,0 @@
-output hit in 2d raycast
-adapt chanell beam
