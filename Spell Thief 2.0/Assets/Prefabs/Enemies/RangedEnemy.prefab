@@ -23,9 +23,10 @@ GameObject:
   - component: {fileID: 61357268383565792}
   - component: {fileID: 50360804719389164}
   - component: {fileID: 114951973682512400}
+  - component: {fileID: 114607517634809344}
   m_Layer: 11
   m_Name: RangedEnemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80,7 +81,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1156174825401372}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -136,6 +137,19 @@ MonoBehaviour:
   LayerFilter:
     serializedVersion: 2
     m_Bits: 1024
+--- !u!114 &114607517634809344
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1156174825401372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad2f29d2e0f0abb418bfa5e33bd1b7dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Life: 2
+  InitLife: 0
 --- !u!114 &114951973682512400
 MonoBehaviour:
   m_ObjectHideFlags: 1
