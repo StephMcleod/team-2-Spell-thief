@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 50930434909847132}
   - component: {fileID: 61619410410597132}
   - component: {fileID: 114513267711135758}
-  - component: {fileID: 114290294653220854}
   - component: {fileID: 114181977755650038}
   m_Layer: 8
   m_Name: LightningSpell
@@ -134,20 +133,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DeteroationRate: 10
   WaitTime: 2
---- !u!114 &114290294653220854
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1285595860890214}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed2204d9a2dad0d4e9cf815c1f7c6d13, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lifetime: 0
-  Initlifetime: 5
-  Damage: 50
 --- !u!114 &114513267711135758
 MonoBehaviour:
   m_ObjectHideFlags: 1

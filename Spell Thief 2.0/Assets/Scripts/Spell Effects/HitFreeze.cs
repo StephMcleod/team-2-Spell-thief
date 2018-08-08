@@ -2,15 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HitFreeze : MonoBehaviour {
+public class HitFreeze : MonoBehaviour
+{
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+
+        if (collision.gameObject.GetComponent<HealthController>() != null) // does the object have health
+        {
+            if (collision.gameObject.GetComponent<Freeze>() == null) //is the object frozen
+            {
+                collision.gameObject.AddComponent<Freeze>(); // add frozen script
+            }
+            else
+            {
+                collision.gameObject.GetComponent<Freeze>().Life = collision.gameObject.GetComponent<Freeze>().InitLife; // reset life
+            }
+        }
+    }
 }
+

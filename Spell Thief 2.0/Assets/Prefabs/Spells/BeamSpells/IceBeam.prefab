@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4958276905250602}
   - component: {fileID: 114406428095220400}
   - component: {fileID: 120942364838529298}
+  - component: {fileID: 114169589864432340}
   m_Layer: 0
   m_Name: IceBeam
   m_TagString: Untagged
@@ -41,6 +42,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114169589864432340
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1482192319178062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e504716ef9592d0439d47ad6fc6836e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 0}
+  Layers:
+    serializedVersion: 2
+    m_Bits: 2049
+  FreezeMod: 2
 --- !u!114 &114406428095220400
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -57,7 +74,7 @@ MonoBehaviour:
   Layers:
     serializedVersion: 2
     m_Bits: 2049
-  Damage: 25
+  Damage: 5
   cost: 10
 --- !u!120 &120942364838529298
 LineRenderer:
