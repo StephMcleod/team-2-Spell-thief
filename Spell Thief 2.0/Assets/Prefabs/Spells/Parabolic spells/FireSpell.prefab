@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 50930434909847132}
   - component: {fileID: 61619410410597132}
   - component: {fileID: 114513267711135758}
-  - component: {fileID: 114548497698465838}
+  - component: {fileID: 114606720834762322}
   m_Layer: 8
   m_Name: FireSpell
   m_TagString: Projectile
@@ -136,7 +136,7 @@ MonoBehaviour:
   Damage: 100
   Bounces: 0
   RB: {fileID: 0}
---- !u!114 &114548497698465838
+--- !u!114 &114606720834762322
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Range: 2
-  Damage: 1000
+  Damage: 10000
   filter:
     useTriggers: 0
     useLayerMask: 0
@@ -158,11 +158,11 @@ MonoBehaviour:
     useOutsideNormalAngle: 0
     layerMask:
       serializedVersion: 2
-      m_Bits: 1
-    minDepth: -100
-    maxDepth: 100
+      m_Bits: 0
+    minDepth: 0
+    maxDepth: 0
     minNormalAngle: 0
-    maxNormalAngle: 360
+    maxNormalAngle: 0
 --- !u!198 &198614572020949642
 ParticleSystem:
   m_ObjectHideFlags: 1

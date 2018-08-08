@@ -145,7 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Magnitude: 30
-  Lifetime: 7
+  Lifetime: 15
   Damage: 100
   Bounces: 0
   RB: {fileID: 0}

@@ -152,6 +152,12 @@ Prefab:
       propertyPath: m_RootOrder
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 114168325712886856, guid: 6a783e40762e4a84a86236646379bb6a,
+        type: 2}
+      propertyPath: Spell
+      value: 
+      objectReference: {fileID: 1285595860890214, guid: 09d8f2f35d951ee4792a8f5587b858e2,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6a783e40762e4a84a86236646379bb6a, type: 2}
   m_IsPrefabParent: 0
@@ -281,7 +287,7 @@ Prefab:
         type: 2}
       propertyPath: Spell
       value: 
-      objectReference: {fileID: 1482192319178062, guid: f61becc79715cc44d8473d3409925f47,
+      objectReference: {fileID: 1285595860890214, guid: 7864232e71e9a8f48a63448a158e9d13,
         type: 2}
     - target: {fileID: 50894090337709668, guid: d9bff96771a720e4d98ac3fdfcc4a45f,
         type: 2}
