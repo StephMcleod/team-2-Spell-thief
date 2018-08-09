@@ -301,6 +301,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\CamSwapper.cs" />
+    <Compile Include="Assets\Scripts\DeathScript.cs" />
     <Compile Include="Assets\Scripts\MeeleAttack.cs" />
     <Compile Include="Assets\Scripts\MovingPlatform.cs" />
     <Compile Include="Assets\Scripts\Player + Spells\CastSpell.cs" />
@@ -313,6 +314,7 @@
     <Compile Include="Assets\Scripts\Player + Spells\Movement2D.cs" />
     <Compile Include="Assets\Scripts\Player + Spells\PickupSpell.cs" />
     <Compile Include="Assets\Scripts\Player + Spells\SpellHit.cs" />
+    <Compile Include="Assets\Scripts\Respawn.cs" />
     <Compile Include="Assets\Scripts\Spell Effects\Burn.cs" />
     <Compile Include="Assets\Scripts\Spell Effects\CreateFlame.cs" />
     <Compile Include="Assets\Scripts\Spell Effects\DamageDecrease.cs" />
@@ -323,6 +325,7 @@
     <Compile Include="Assets\Scripts\Spell Effects\HitFreeze.cs" />
     <Compile Include="Assets\Scripts\Spell Effects\LightningBeam.cs" />
     <Compile Include="Assets\Scripts\Spell Effects\Retarget.cs" />
+    <Compile Include="Assets\Scripts\Spell Effects\SummonLightning.cs" />
     <Compile Include="Assets\Scripts\Teleport.cs" />
   </ItemGroup>
   <ItemGroup>
