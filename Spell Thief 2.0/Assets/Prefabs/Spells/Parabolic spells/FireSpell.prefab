@@ -147,8 +147,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c82cbc9bc0e2ba24d806f40eb5d7ac69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Range: 2
-  Damage: 10000
+  Range: 1.5
+  Damage: 150
   filter:
     useTriggers: 0
     useLayerMask: 0

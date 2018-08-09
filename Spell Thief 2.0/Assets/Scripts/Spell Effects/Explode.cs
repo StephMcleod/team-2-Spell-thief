@@ -11,13 +11,8 @@ public class Explode : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.LogWarning("HF(DS");
-        Physics2D.CircleCast(transform.position, Range, transform.up, filter, Targets, Mathf.Infinity);
+        Targets = Physics2D.CircleCastAll(transform.position, Range, transform.up);
 
-        if (Physics2D.CircleCast(transform.position, 1f, Vector2.right, 10, 0))
-        {
-            print("[[[[[[[[[[ HIT SOMETHING?? ");
-        }
         foreach (RaycastHit2D Current in Targets)
         {
             Debug.LogWarning("Target hit: " + Current.transform.gameObject.name);

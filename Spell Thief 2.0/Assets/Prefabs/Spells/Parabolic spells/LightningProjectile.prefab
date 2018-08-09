@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 50930434909847132}
   - component: {fileID: 61619410410597132}
   - component: {fileID: 114513267711135758}
+  - component: {fileID: 114291116358473662}
   m_Layer: 8
   m_Name: LightningProjectile
   m_TagString: Projectile
@@ -53,14 +54,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1285595860890214}
-  m_LocalRotation: {x: -0, y: -0, z: 0.0016359943, w: 0.9999987}
-  m_LocalPosition: {x: -0.39201248, y: -1.9615064, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4851161957389058}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.187}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4851161957389058
 Transform:
   m_ObjectHideFlags: 1
@@ -119,6 +120,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.32}
   m_EdgeRadius: 0
+--- !u!114 &114291116358473662
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1285595860890214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b2f79d8830d675449ff755b61d81af2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bolt: {fileID: 1285595860890214, guid: 705296c2343119045bacf543afc9cb1d, type: 2}
 --- !u!114 &114513267711135758
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4758,7 +4771,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1373b49046506bb4296ce53eafe3e117, type: 3}
-  m_Color: {r: 0.9160466, g: 1, b: 0, a: 1}
+  m_Color: {r: 0.43610525, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

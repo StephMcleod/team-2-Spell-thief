@@ -5,6 +5,7 @@ using UnityEngine;
 public class Movement2D : MonoBehaviour {
     public float speed = 2;
     public float jumpheight;
+    public float AscentSpeed;
     public LayerMask playerFilter;
     [HideInInspector] public Rigidbody2D RB;
 
@@ -33,6 +34,21 @@ public class Movement2D : MonoBehaviour {
                 RB.AddForce(new Vector2(0,transform.up.y * jumpheight));
             }
         }
+    }
+
+    void OnTriggerStay2D(Collider2D collider)
+    {
+
+        if (collider.tag == "Ladder")
+        {
+            RB.gravityScale = 0;
+            RB.velocity = new Vector2(0, 0);
+            RB.AddForce(new Vector2(0, Input.GetAxis("Vertical") * AscentSpeed));
+        }
+        else
+        {
+            RB.gravityScale = 1;
+        }    
     }
 }
         

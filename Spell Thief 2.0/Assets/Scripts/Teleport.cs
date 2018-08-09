@@ -2,21 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class teleport : MonoBehaviour {
+public class Teleport : MonoBehaviour {
 
-    Camera cam;
-
-    // Use this for initialization
-    void Start()
-    {
-        cam = GetComponent<Camera>();
-    }
+    public float Cost;
 
     void Update()
         {
-             if (Input.GetButtonDown("Fire2"))
-             {
-                Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-             }
+            if (Input.GetButtonDown("Fire2"))
+            {
+                if (GetComponent<ManaBar>().Mana >= Cost)
+                {
+                    transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                    transform.position = new Vector3(transform.position.x, transform.position.y, 0);
+                    GetComponent<ManaBar>().Mana -= Cost;
+                }
+            }
         }
     }

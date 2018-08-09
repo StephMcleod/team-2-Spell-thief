@@ -25,6 +25,8 @@ GameObject:
   - component: {fileID: 61631274794690250}
   - component: {fileID: 114481207752603198}
   - component: {fileID: 114414917801714656}
+  - component: {fileID: 114469217592094744}
+  - component: {fileID: 114723532985395500}
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -132,7 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0266259086f5ad4fb49083b46d56c7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Spell: {fileID: 1285595860890214, guid: 09d8f2f35d951ee4792a8f5587b858e2, type: 2}
+  Spell: {fileID: 1285595860890214, guid: 7864232e71e9a8f48a63448a158e9d13, type: 2}
   player: {fileID: 1129025437022438}
 --- !u!114 &114409658356195386
 MonoBehaviour:
@@ -147,6 +149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1000
   jumpheight: 50
+  AscentSpeed: 100
   playerFilter:
     serializedVersion: 2
     m_Bits: 2049
@@ -166,6 +169,18 @@ MonoBehaviour:
   MaxHealth: 1000
   HealthBar: {fileID: 0}
   HealthPercent: 0
+--- !u!114 &114469217592094744
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1129025437022438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dc16f9d26858ae479750c55aa771a27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cost: 150
 --- !u!114 &114481207752603198
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -198,6 +213,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 80e74bfb180abfd479fb7705e600befe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114723532985395500
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1129025437022438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e8702191610fdb459cf3228d56d9c5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &212746415577507126

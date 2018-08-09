@@ -17,6 +17,7 @@ public class ManaBar : MonoBehaviour {
     private void Start()
     {
         Mana = Max;
+        Bar = GameObject.Find("Mana").GetComponent<Image>();
     }
 
 
