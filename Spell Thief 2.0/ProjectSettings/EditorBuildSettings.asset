@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/levelSelect.unity
+    guid: 2775a923e4c5b694cb01de4ff20bef15
+  - enabled: 1
+    path: Assets/Scenes/Level1Greybox.unity
+    guid: 4c063aefca4b24b4b8fa579fae146a1d
+  - enabled: 1
+    path: Assets/Scenes/Level2Greybox.unity
+    guid: e66ac9e4158595444928f2fb5e9c1d37
+  - enabled: 1
+    path: Assets/Scenes/Level3GreyBox.unity
+    guid: 7f501167f2b24ec45959e1e679e8afa0
+  - enabled: 1
+    path: Assets/Scenes/TutorialGreybox.unity
+    guid: 5d025a60b76eb5b4aaaacd7871dedb58
   m_configObjects: {}

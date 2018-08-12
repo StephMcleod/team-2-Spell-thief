@@ -324,6 +324,17 @@ Prefab:
       propertyPath: HealthBar
       value: 
       objectReference: {fileID: 2093712070}
+    - target: {fileID: 114292937088447076, guid: d9bff96771a720e4d98ac3fdfcc4a45f,
+        type: 2}
+      propertyPath: Spell
+      value: 
+      objectReference: {fileID: 1802523853683716, guid: 5a82ab4977feb8c4db967a55a7c412cb,
+        type: 2}
+    - target: {fileID: 114481207752603198, guid: d9bff96771a720e4d98ac3fdfcc4a45f,
+        type: 2}
+      propertyPath: Cost
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d9bff96771a720e4d98ac3fdfcc4a45f, type: 2}
   m_IsPrefabParent: 0

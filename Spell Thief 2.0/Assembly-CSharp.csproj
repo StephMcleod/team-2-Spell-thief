@@ -66,6 +66,7 @@
      <Compile Include="Assets\Scripts\Player + Spells\PickupSpell.cs" />
      <Compile Include="Assets\Scripts\Player + Spells\SpellHit.cs" />
      <Compile Include="Assets\Scripts\Respawn.cs" />
+     <Compile Include="Assets\Scripts\SceneSwaper.cs" />
      <Compile Include="Assets\Scripts\Spell Effects\Burn.cs" />
      <Compile Include="Assets\Scripts\Spell Effects\CreateFlame.cs" />
      <Compile Include="Assets\Scripts\Spell Effects\DamageDecrease.cs" />
