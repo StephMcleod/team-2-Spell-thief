@@ -158,6 +158,10 @@ Prefab:
       value: 
       objectReference: {fileID: 1285595860890214, guid: 09d8f2f35d951ee4792a8f5587b858e2,
         type: 2}
+    - target: {fileID: 1156174825401372, guid: 6a783e40762e4a84a86236646379bb6a, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6a783e40762e4a84a86236646379bb6a, type: 2}
   m_IsPrefabParent: 0
@@ -1050,6 +1054,10 @@ Prefab:
     - target: {fileID: 1918562129756390, guid: 442d7e31b8c1f38469d3b056517a002e, type: 2}
       propertyPath: m_Name
       value: MeeleEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 1918562129756390, guid: 442d7e31b8c1f38469d3b056517a002e, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 442d7e31b8c1f38469d3b056517a002e, type: 2}

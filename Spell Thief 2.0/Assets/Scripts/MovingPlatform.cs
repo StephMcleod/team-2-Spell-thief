@@ -7,16 +7,13 @@ public class MovingPlatform : MonoBehaviour {
     enum Directions {Left, Right}
         Directions Current;
     public float Speed;
-    float Range;
     public LayerMask Filter;
     public LayerMask PlayerFilter;
-    public float MeleeRange;
     [HideInInspector]public Rigidbody2D RB;
 
     // Use this for initialization
     void Start () {
         RB = GetComponent<Rigidbody2D>();
-        Range = GetComponent<Renderer>().bounds.size.y;
     }
 
     // Update is called once per frame
