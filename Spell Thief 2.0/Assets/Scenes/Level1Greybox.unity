@@ -403,7 +403,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b9158a9a52b696a4a8b4b239400e7c44, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2232bc308380d04449197d39fae3661a, type: 3}
   m_Color: {r: 1, g: 0.66165113, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -882,7 +882,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.975, y: 0.94}
+  m_Size: {x: 0.975, y: 0.858}
   m_EdgeRadius: 0
 --- !u!23 &97028116
 MeshRenderer:
@@ -1092,7 +1092,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.975, y: 0.94}
+  m_Size: {x: 0.975, y: 0.858}
   m_EdgeRadius: 0
 --- !u!23 &118097138
 MeshRenderer:
@@ -1502,7 +1502,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.975, y: 0.94}
+  m_Size: {x: 0.975, y: 0.858}
   m_EdgeRadius: 0
 --- !u!23 &193922644
 MeshRenderer:
@@ -1865,7 +1865,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.975, y: 0.94}
+  m_Size: {x: 0.975, y: 0.858}
   m_EdgeRadius: 0
 --- !u!23 &270003683
 MeshRenderer:
@@ -2210,7 +2210,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b9158a9a52b696a4a8b4b239400e7c44, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2232bc308380d04449197d39fae3661a, type: 3}
   m_Color: {r: 1, g: 0.82387507, b: 0.41037738, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3921,7 +3921,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b9158a9a52b696a4a8b4b239400e7c44, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2232bc308380d04449197d39fae3661a, type: 3}
   m_Color: {r: 1, g: 0.7546338, b: 0.495283, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4055,7 +4055,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b9158a9a52b696a4a8b4b239400e7c44, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2232bc308380d04449197d39fae3661a, type: 3}
   m_Color: {r: 1, g: 0.84068036, b: 0.5424528, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4907,7 +4907,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.975, y: 0.94}
+  m_Size: {x: 0.975, y: 0.858}
   m_EdgeRadius: 0
 --- !u!23 &634226167
 MeshRenderer:
@@ -5462,7 +5462,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.975, y: 0.94}
+  m_Size: {x: 0.975, y: 0.858}
   m_EdgeRadius: 0
 --- !u!23 &715070888
 MeshRenderer:
@@ -8697,7 +8697,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.975, y: 0.94}
+  m_Size: {x: 0.975, y: 0.858}
   m_EdgeRadius: 0
 --- !u!23 &1153965372
 MeshRenderer:
@@ -9134,7 +9134,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.975, y: 0.94}
+  m_Size: {x: 0.975, y: 0.858}
   m_EdgeRadius: 0
 --- !u!23 &1198679993
 MeshRenderer:
@@ -9649,7 +9649,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b9158a9a52b696a4a8b4b239400e7c44, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2232bc308380d04449197d39fae3661a, type: 3}
   m_Color: {r: 1, g: 0.6850692, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -10208,7 +10208,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1318415134}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.3741, y: -2, z: 0}
+  m_LocalPosition: {x: -10.4, y: -2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 408619718}
@@ -10248,13 +10248,13 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5f00f38506a383d479a6b9eea549f026, type: 3}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: 21300000, guid: 2232bc308380d04449197d39fae3661a, type: 3}
   m_Color: {r: 0.8113208, g: 0.8113208, b: 0.8113208, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 1.2541809, y: 8}
+  m_Size: {x: 0.9727783, y: 8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -10265,7 +10265,7 @@ BoxCollider2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1318415134}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -10275,8 +10275,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.75, y: 0.75}
-    newSize: {x: 1.2541809, y: 8}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 0.9727783, y: 8}
     adaptiveTilingThreshold: 0.5
     drawMode: 2
     adaptiveTiling: 0
@@ -11045,7 +11045,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b9158a9a52b696a4a8b4b239400e7c44, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2232bc308380d04449197d39fae3661a, type: 3}
   m_Color: {r: 1, g: 0.6831585, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -12119,7 +12119,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.975, y: 0.94}
+  m_Size: {x: 0.975, y: 0.858}
   m_EdgeRadius: 0
 --- !u!23 &1639108163
 MeshRenderer:
@@ -12377,7 +12377,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b9158a9a52b696a4a8b4b239400e7c44, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2232bc308380d04449197d39fae3661a, type: 3}
   m_Color: {r: 1, g: 0.7334804, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -12442,7 +12442,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.975, y: 0.94}
+  m_Size: {x: 0.975, y: 0.858}
   m_EdgeRadius: 0
 --- !u!23 &1666829376
 MeshRenderer:
@@ -13328,7 +13328,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b9158a9a52b696a4a8b4b239400e7c44, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2232bc308380d04449197d39fae3661a, type: 3}
   m_Color: {r: 1, g: 0.8143646, b: 0.3537736, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -13491,7 +13491,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.975, y: 0.94}
+  m_Size: {x: 0.975, y: 0.858}
   m_EdgeRadius: 0
 --- !u!23 &1875470539
 MeshRenderer:
@@ -13850,7 +13850,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b9158a9a52b696a4a8b4b239400e7c44, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2232bc308380d04449197d39fae3661a, type: 3}
   m_Color: {r: 1, g: 0.6831585, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -13950,7 +13950,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b9158a9a52b696a4a8b4b239400e7c44, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2232bc308380d04449197d39fae3661a, type: 3}
   m_Color: {r: 1, g: 0.7636164, b: 0.2688679, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -14050,7 +14050,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b9158a9a52b696a4a8b4b239400e7c44, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2232bc308380d04449197d39fae3661a, type: 3}
   m_Color: {r: 1, g: 0.807994, b: 0.3254717, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -14354,7 +14354,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 8.449605
+  orthographic size: 7.44
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -14538,7 +14538,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.975, y: 0.94}
+  m_Size: {x: 0.975, y: 0.858}
   m_EdgeRadius: 0
 --- !u!23 &2005319625
 MeshRenderer:
@@ -14733,7 +14733,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.975, y: 0.94}
+  m_Size: {x: 0.975, y: 0.858}
   m_EdgeRadius: 0
 --- !u!23 &2036441046
 MeshRenderer:
@@ -15432,7 +15432,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b9158a9a52b696a4a8b4b239400e7c44, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2232bc308380d04449197d39fae3661a, type: 3}
   m_Color: {r: 1, g: 0.807994, b: 0.3254717, a: 1}
   m_FlipX: 0
   m_FlipY: 0

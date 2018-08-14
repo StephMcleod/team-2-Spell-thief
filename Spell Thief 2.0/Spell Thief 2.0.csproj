@@ -300,14 +300,18 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\CamSwapper.cs" />
-    <Compile Include="Assets\Scripts\DeathScript.cs" />
-    <Compile Include="Assets\Scripts\HiddenRoom.cs" />
+    <Compile Include="Assets\Scripts\DialogueTrigger.cs" />
+    <Compile Include="Assets\Scripts\LevelElements\CamSwapper.cs" />
+    <Compile Include="Assets\Scripts\LevelElements\FinishGame.cs" />
+    <Compile Include="Assets\Scripts\LevelElements\HiddenRoom.cs" />
+    <Compile Include="Assets\Scripts\LevelElements\MovingPlatform.cs" />
+    <Compile Include="Assets\Scripts\LevelElements\MovingPlatformVertical.cs" />
+    <Compile Include="Assets\Scripts\LevelElements\TimedPlatforms.cs" />
     <Compile Include="Assets\Scripts\MeeleAttack.cs" />
-    <Compile Include="Assets\Scripts\MovingPlatform.cs" />
-    <Compile Include="Assets\Scripts\MovingPlatformVertical.cs" />
+    <Compile Include="Assets\Scripts\PitfallSpawner.cs" />
     <Compile Include="Assets\Scripts\Player + Spells\CastSpell.cs" />
     <Compile Include="Assets\Scripts\Player + Spells\ChanellBeam.cs" />
+    <Compile Include="Assets\Scripts\Player + Spells\DeathScript.cs" />
     <Compile Include="Assets\Scripts\Player + Spells\EnemySpellCast.cs" />
     <Compile Include="Assets\Scripts\Player + Spells\FollowMouse.cs" />
     <Compile Include="Assets\Scripts\Player + Spells\HealthController.cs" />
@@ -315,8 +319,10 @@
     <Compile Include="Assets\Scripts\Player + Spells\ManaPotion.cs" />
     <Compile Include="Assets\Scripts\Player + Spells\Movement2D.cs" />
     <Compile Include="Assets\Scripts\Player + Spells\PickupSpell.cs" />
+    <Compile Include="Assets\Scripts\Player + Spells\Respawn.cs" />
     <Compile Include="Assets\Scripts\Player + Spells\SpellHit.cs" />
-    <Compile Include="Assets\Scripts\Respawn.cs" />
+    <Compile Include="Assets\Scripts\Player + Spells\Teleport.cs" />
+    <Compile Include="Assets\Scripts\Quit.cs" />
     <Compile Include="Assets\Scripts\SceneSwaper.cs" />
     <Compile Include="Assets\Scripts\Spell Effects\Burn.cs" />
     <Compile Include="Assets\Scripts\Spell Effects\CreateFlame.cs" />
@@ -329,8 +335,6 @@
     <Compile Include="Assets\Scripts\Spell Effects\LightningBeam.cs" />
     <Compile Include="Assets\Scripts\Spell Effects\Retarget.cs" />
     <Compile Include="Assets\Scripts\Spell Effects\SummonLightning.cs" />
-    <Compile Include="Assets\Scripts\Teleport.cs" />
-    <Compile Include="Assets\Scripts\TimedPlatforms.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="C:\Users\William Kidd\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Styles\Main_Dark.uss" />
