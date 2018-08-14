@@ -10,10 +10,13 @@ public class HealthController : MonoBehaviour {
     public Image HealthBar;
     public float HealthPercent;
 
+    public AudioClip sound; // sound not specified yet
+    private AudioSource SoundPlayer;
+
     public void Start()
     {
         MaxHealth = Health;
-        DrawHealth();// run draw health function
+        SoundPlayer = GameObject.FindWithTag("Player").GetComponent<AudioSource>();
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -23,6 +26,8 @@ public class HealthController : MonoBehaviour {
         {
             Health -= collision.gameObject.GetComponent<SpellHit>().Damage;  //subtract damage value
             DrawHealth();  // run draw health function
+            SoundPlayer.PlayOneShot(sound, 1f);
+            Debug.Log("Hurt");
             Destroy(collision.gameObject);
         }
     }

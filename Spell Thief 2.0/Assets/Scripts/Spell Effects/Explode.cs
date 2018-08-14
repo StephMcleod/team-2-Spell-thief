@@ -15,7 +15,6 @@ public class Explode : MonoBehaviour {
 
         foreach (RaycastHit2D Current in Targets)
         {
-            Debug.LogWarning("Target hit: " + Current.transform.gameObject.name);
             if (Current.transform.gameObject.GetComponent<HealthController>() != null)
             {
                 Current.transform.gameObject.GetComponent<HealthController>().Health -= Damage;
