@@ -10,6 +10,8 @@ public class DialogueTrigger : MonoBehaviour {
     public GameObject dialogueBox;
     public string dialogue;
     public Text dialogueText;
+    public GameObject player;
+    public bool disableMovement;
     private bool hit;
 
     // Use this for initialization
@@ -25,10 +27,21 @@ public class DialogueTrigger : MonoBehaviour {
             timeLeft -= Time.deltaTime;
             dialogueBox.SetActive(true);
             dialogueText.text = dialogue;
+
+            if (disableMovement == true)
+            {
+                player.GetComponent<Movement2D>().enabled = false;
+                player.GetComponent<Teleport>().enabled = false;
+                player.GetComponentInChildren<CastSpell>().enabled = false;
+            }
+
             if (timeLeft < 0)
             {
                 dialogueBox.SetActive(false);
                 timeLeft = resetTime;
+                player.GetComponent<Movement2D>().enabled = true;
+                player.GetComponent<Teleport>().enabled = true;
+                player.GetComponentInChildren<CastSpell>().enabled = true;
                 Destroy(gameObject);
             }
         }
