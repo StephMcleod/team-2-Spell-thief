@@ -7,10 +7,13 @@ public class ManaBar : MonoBehaviour {
 
     public float Max; // maximum energy
     public float NewMax;
+    public float last;
     public float RegenRate; // regen per second
     public Image Bar; // bar top represent
     public float Cost; // cost per shot
     public float[] segments; // array of segments from high to low
+    public AudioClip sound; // sound not specified yet
+    private AudioSource SoundPlayer;
 
     public float Mana = 0;
 
@@ -18,6 +21,7 @@ public class ManaBar : MonoBehaviour {
     {
         Mana = Max;
         Bar = GameObject.Find("Mana").GetComponent<Image>();
+        SoundPlayer = GetComponent<AudioSource>();
     }
 
 
@@ -39,6 +43,11 @@ public class ManaBar : MonoBehaviour {
         {
             if (Mana <= i) NewMax = i; // if falls below then set as new max
         }
+        if( NewMax < last) // if the cap has been decreased
+        {
+            SoundPlayer.PlayOneShot(sound, 1f); // play specified sound at 50% volume
+        }
+        last = NewMax;
     }
 }
         
