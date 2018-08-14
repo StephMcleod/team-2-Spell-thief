@@ -305,6 +305,7 @@
     <Compile Include="Assets\Scripts\HiddenRoom.cs" />
     <Compile Include="Assets\Scripts\MeeleAttack.cs" />
     <Compile Include="Assets\Scripts\MovingPlatform.cs" />
+    <Compile Include="Assets\Scripts\MovingPlatformVertical.cs" />
     <Compile Include="Assets\Scripts\Player + Spells\CastSpell.cs" />
     <Compile Include="Assets\Scripts\Player + Spells\ChanellBeam.cs" />
     <Compile Include="Assets\Scripts\Player + Spells\EnemySpellCast.cs" />
