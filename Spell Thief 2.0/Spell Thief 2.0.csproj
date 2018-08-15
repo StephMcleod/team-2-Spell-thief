@@ -301,6 +301,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\DialogueTrigger.cs" />
+    <Compile Include="Assets\Scripts\ExplosionBlock.cs" />
     <Compile Include="Assets\Scripts\LevelElements\CamSwapper.cs" />
     <Compile Include="Assets\Scripts\LevelElements\FinishGame.cs" />
     <Compile Include="Assets\Scripts\LevelElements\HiddenRoom.cs" />
