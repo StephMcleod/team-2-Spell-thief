@@ -14,6 +14,12 @@ public class DialogueTrigger : MonoBehaviour {
     public bool disableMovement;
     private bool hit;
 
+    //public gam albus;
+    //public float xdistanceFromTrigger;
+    //public float ydistanceFromTrigger;
+    //public float zdistanceFromTrigger;
+    //public bool albusSpawned;
+
     // Use this for initialization
     void Start ()
     {
@@ -27,6 +33,13 @@ public class DialogueTrigger : MonoBehaviour {
             timeLeft -= Time.deltaTime;
             dialogueBox.SetActive(true);
             dialogueText.text = dialogue;
+
+            //if (albusSpawned == false)
+            //{
+            //    Instantiate(albus, new Vector3(gameObject.transform.position.x + xdistanceFromTrigger, gameObject.transform.position.y + ydistanceFromTrigger, gameObject.transform.position.z + zdistanceFromTrigger), gameObject.transform.rotation);
+            //    albusSpawned = true;
+            //}
+            
 
             if (disableMovement == true)
             {
@@ -43,6 +56,7 @@ public class DialogueTrigger : MonoBehaviour {
                 player.GetComponent<Teleport>().enabled = true;
                 player.GetComponentInChildren<CastSpell>().enabled = true;
                 Destroy(gameObject);
+                //Destroy(albus);
             }
         }
         
