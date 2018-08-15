@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Range: 0.5
-  Damage: 50
+  Damage: 100
   filter:
     useTriggers: 0
     useLayerMask: 0
