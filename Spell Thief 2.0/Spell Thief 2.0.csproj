@@ -300,6 +300,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\CameraScroll.cs" />
     <Compile Include="Assets\Scripts\DialogueTrigger.cs" />
     <Compile Include="Assets\Scripts\ExplosionBlock.cs" />
     <Compile Include="Assets\Scripts\LevelElements\CamSwapper.cs" />
