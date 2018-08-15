@@ -12,5 +12,6 @@ public class Respawn : MonoBehaviour {
     {
         Instantiate(Player, transform.position, new Quaternion(0, 0, 0, 0));
         Player.GetComponent<HealthController>().HealthBar = GameObject.Find("Health").GetComponent<Image>();
+        Player.GetComponent<HealthController>().Invoke("DrawHealth", 0);
     }
 }

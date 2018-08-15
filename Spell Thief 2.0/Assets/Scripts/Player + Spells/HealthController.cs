@@ -21,7 +21,6 @@ public class HealthController : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Hit");
         if (collision.transform.tag == "Projectile")
         {
             Health -= collision.gameObject.GetComponent<SpellHit>().Damage;  //subtract damage value

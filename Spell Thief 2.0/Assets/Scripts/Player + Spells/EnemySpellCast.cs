@@ -16,8 +16,8 @@ public class EnemySpellCast : MonoBehaviour
 
     void Start()
     {
-        Target = GameObject.Find("Player");
-        SoundPlayer = GetComponent<AudioSource>();
+        Target = GameObject.FindGameObjectWithTag("Player");
+        SoundPlayer = Target.GetComponent<AudioSource>();
     }
 
     void Update()
