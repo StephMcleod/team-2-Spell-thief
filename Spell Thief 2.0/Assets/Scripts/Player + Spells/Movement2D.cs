@@ -27,7 +27,7 @@ public class Movement2D : MonoBehaviour {
             RaycastHit2D Platform = Physics2D.Raycast(transform.position, transform.up * -1, GetComponent<Renderer>().bounds.size.y / 2 + 0.1f, playerFilter);
             if (Platform.collider.gameObject.GetComponent<Rigidbody2D>() != null)
             {
-                RB.velocity += Platform.collider.gameObject.GetComponent<Rigidbody2D>().velocity;
+                RB.velocity += new Vector2(Platform.collider.gameObject.GetComponent<Rigidbody2D>().velocity.x, 0); // add x velocity if standing on an object
             }
             if (Input.GetButtonDown("Jump"))
             {

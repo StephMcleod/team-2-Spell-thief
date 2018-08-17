@@ -179,7 +179,7 @@ MonoBehaviour:
   Spell: {fileID: 1285595860890214, guid: 7c653d9b285218447843ccb2abcd1607, type: 2}
   Delay: 1.5
   Range: 10
-  sound: {fileID: 0}
+  sound: {fileID: 8300000, guid: 7b40dff4b478804488fcceb6e71c06ed, type: 3}
   LayerFilter:
     serializedVersion: 2
     m_Bits: 1024

@@ -125,7 +125,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1096039708021598}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2039e98c07b00a74cb2321d9b1a2cb1a, type: 3}
   m_Name: 
@@ -168,10 +168,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41bdc4bc655cd2a4295b0ffec3a86517, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Spell: {fileID: 1285595860890214, guid: afc36df702a5cac42910ffc8ec16952e, type: 2}
+  Spell: {fileID: 1285595860890214, guid: 7c653d9b285218447843ccb2abcd1607, type: 2}
   Delay: 2
   Range: 10
-  sound: {fileID: 0}
+  sound: {fileID: 8300000, guid: 7b40dff4b478804488fcceb6e71c06ed, type: 3}
   LayerFilter:
     serializedVersion: 2
     m_Bits: 1024

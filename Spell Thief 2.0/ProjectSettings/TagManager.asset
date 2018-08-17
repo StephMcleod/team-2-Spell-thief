@@ -7,6 +7,7 @@ TagManager:
   - Projectile
   - Enemy
   - Ladder
+  - Caster
   layers:
   - Default
   - TransparentFX
@@ -41,6 +42,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Behind
+    uniqueID: 2282311377
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

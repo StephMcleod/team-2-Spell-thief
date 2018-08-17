@@ -80,6 +80,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NewCost: 50
   NewSpell: {fileID: 1285595860890214, guid: afc36df702a5cac42910ffc8ec16952e, type: 2}
+  NewSound: {fileID: 0}
+  sound: {fileID: 8300000, guid: ae280ff52c03e6b48bdb2b56c9c646c9, type: 3}
 --- !u!212 &212649643170482522
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -112,8 +114,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -2012655919
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 48f7a6c4cb043d245be80db90ad1370e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

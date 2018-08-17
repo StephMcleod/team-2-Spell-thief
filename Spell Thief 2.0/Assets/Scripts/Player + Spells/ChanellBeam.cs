@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ChanellBeam : MonoBehaviour {
 
-    public Transform Player;
+    public GameObject Player;
     public LineRenderer lineDraw;
     private RaycastHit2D Hit;
     public LayerMask Layers;
@@ -14,15 +14,17 @@ public class ChanellBeam : MonoBehaviour {
     // Use this for initialization
     void Start () {
         lineDraw = GetComponent<LineRenderer>(); // line render component
-        Player = GameObject.Find("PlayerCaster").transform;
+        Player = GameObject.FindGameObjectWithTag("Caster");
     }
 	
 	// Update is called once per frame
 	void Update () {
         
         Hit = Physics2D.Raycast(Player.transform.position, Player.transform.right,100,Layers);
+        
         if (Hit.transform != null)
         {
+            Debug.Log(Player.transform.position);
             if (Hit.transform.GetComponent<HealthController>() != null) // if there is a target
             {
                 Hit.transform.gameObject.GetComponent<HealthController>().Health -= Damage; // sybtract 1 health each frame
@@ -34,8 +36,8 @@ public class ChanellBeam : MonoBehaviour {
                 GetComponent<CreateFlame>().Invoke("CreateFire", 0);
             }
         }
-        lineDraw.SetPosition(0, Player.position); // set line start at player
-        lineDraw.SetPosition(1, Player.right * 100); //draw line 100 units
+        lineDraw.SetPosition(0, Player.transform.position); // set line start at player
+        lineDraw.SetPosition(1, Player.transform.right * 100); //draw line 100 units
         
         if (Hit.transform != null)
         {

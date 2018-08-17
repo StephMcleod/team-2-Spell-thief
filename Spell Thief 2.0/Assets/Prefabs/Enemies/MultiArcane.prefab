@@ -168,10 +168,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41bdc4bc655cd2a4295b0ffec3a86517, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Spell: {fileID: 1285595860890214, guid: 53338057b7bca7446a110a0ff18574be, type: 2}
+  Spell: {fileID: 1285595860890214, guid: 69e69e7451d2f8a4fbfea0f917d76937, type: 2}
   Delay: 2
   Range: 10
-  sound: {fileID: 8300000, guid: fa11f459938c4b649ad3faea44b52662, type: 3}
+  sound: {fileID: 8300000, guid: f59352b7762259146845032ee3cf355d, type: 3}
   LayerFilter:
     serializedVersion: 2
     m_Bits: 1024

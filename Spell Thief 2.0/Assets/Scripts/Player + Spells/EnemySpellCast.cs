@@ -22,20 +22,27 @@ public class EnemySpellCast : MonoBehaviour
 
     void Update()
     {
-        //RaycastHit2D hit;
-        Vector3 dir = Target.transform.position - transform.position ;
-        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg; // geta ngle to face the object using trig
-        transform.rotation = Quaternion.AngleAxis(angle,Vector3.forward);// rotates specified number of degrees around upwards vector
-
-        if (Physics2D.Raycast(transform.position,Vector2.left,Range,LayerFilter)) // if the enemy finds an object with specified distance
+        if (Target != null)
         {
-            if (Time.time >= LastShot + Delay) // delay has ended
+            Vector3 dir = Target.transform.position - transform.position;
+            float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg; // geta ngle to face the object using trig
+            transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);// rotates specified number of degrees around upwards vector
+
+            if (Physics2D.Raycast(transform.position, Vector2.left, Range, LayerFilter)) // if the enemy finds an object with specified distance
             {
-                GameObject Projectile = Instantiate(Spell, transform.position,transform.rotation); // create spell
-                Projectile.layer = 9; // set as enemy shot
-                SoundPlayer.PlayOneShot(sound, .5f); // play specified sound at 50% volume
-                LastShot = Time.time; // register time of shot
+                if (Time.time >= LastShot + Delay) // delay has ended
+                {
+                    GameObject Projectile = Instantiate(Spell, transform.position, transform.rotation); // create spell
+                    Projectile.layer = 9; // set as enemy shot
+                    SoundPlayer.PlayOneShot(sound, .5f); // play specified sound at 50% volume
+                    LastShot = Time.time; // register time of shot
+                }
             }
+        }
+        else
+        {
+            Target = GameObject.FindGameObjectWithTag("Player"); //retarget player on respawn
+            SoundPlayer = Target.GetComponent<AudioSource>();
         }
     }
 }
