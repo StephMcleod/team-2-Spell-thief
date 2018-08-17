@@ -1,8 +1,0 @@
-sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/Level1Greybox.unity
-=======
-- path: Assets/Scenes/levelSelect.unity
->>>>>>> c6adb9da850a0df1bcf52b155980e9bda70badb6
-  isLoaded: 1
-  isActive: 1
